@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Markdown常用总结</title>
+    <link href="/2020/05/04/Markdown%E5%B8%B8%E7%94%A8%E6%80%BB%E7%BB%93/"/>
+    <url>/2020/05/04/Markdown%E5%B8%B8%E7%94%A8%E6%80%BB%E7%BB%93/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。[4]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。<br><br>由于Markdown的轻量化、易读易写特性，并且对于图片，图表、数学式都有支持，当前许多网站都广泛使用Markdown来撰写帮助文档或是用于论坛上发表消息。如GitHub、Reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge、简书等，甚至还能被使用来撰写电子书。</p><h2 id="Markdown的应用"><a href="#Markdown的应用" class="headerlink" title="Markdown的应用"></a>Markdown的应用</h2><p>作为程序员，Markdown一般用来写一些个人博客、文档等。当前很多网站都广泛使用Markdown来撰写帮助文档或是论坛消息发表。我们常用的GitHub、简书、CSDN等里面的很多大牛撰写的技术文章大都使用Markdown。</p><h2 id="Markdown编辑器"><a href="#Markdown编辑器" class="headerlink" title="Markdown编辑器"></a>Markdown编辑器</h2><p>我个人比较喜欢用Visual Studio Code和Atom插件方式，在线的话可以用简书等，如果平时记笔记的话，推荐有道云笔记。同时Markdown支持导出HTML、PDF、Word、图片等多种文件类型，非常的方便，并且兼容性和移植性强。</p><h2 id="Markdown常用总结"><a href="#Markdown常用总结" class="headerlink" title="Markdown常用总结"></a>Markdown常用总结</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><pre><code class="hljs clean"># 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题</code></pre><ul><li>效果(一级标题会自带分割线):</li></ul><p><img src="http://m.qpic.cn/psc?/V10crFwK1NrfvE/asAWapIHmrvfpYzxMmE6AGRPXSRrHzwF6xwbHdmhvcH4oMFbRFze7z8fn9bsoSXVh67sqTFKGyWGtvg2v7oy9g!!/b&bo=MAP.AAAAAAADF*8!&rf=viewer_4" srcset="/img/loading.gif" alt=""></p><hr><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><ul><li><p>Markdown需要换行或者新起段落时，可以采用末尾加两个空格然后回车、&lt;br&gt;标签、中间空行方式来新起段落。</p><pre><code class="hljs armasm">第一个段落  (此处敲两个空格)第二个段落第一个段落&lt;<span class="hljs-keyword">br&gt;第二个段落</span><span class="hljs-keyword"></span><span class="hljs-keyword"></span><span class="hljs-keyword">第一个段落</span><span class="hljs-keyword"></span><span class="hljs-keyword">第二个段落</span></code></pre></li><li><p>效果都是一致的：</p></li></ul><blockquote><p>第一个段落<br>  第二个段落</p></blockquote><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><pre><code class="hljs markdown"><span class="hljs-emphasis">*斜体文本*</span><span class="hljs-emphasis">_斜体文本_</span><span class="hljs-strong">**粗体文本**</span><span class="hljs-strong">__粗体文本__</span><span class="hljs-strong">***粗斜体文本**</span>*<span class="hljs-strong">___粗斜体文本__</span>_~~删除线文本~~<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span></span>下划线文本<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span></span></code></pre><ul><li>效果：<blockquote><p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong><br><strong><em>粗斜体文本</em></strong><br><del>删除线文本</del><br><u>下划线文本</u></p></blockquote></li></ul><h3 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h3><pre><code class="hljs markdown"><span class="hljs-emphasis">***</span><span class="hljs-bullet">* </span><span class="hljs-emphasis">* *</span><span class="hljs-strong">*****</span><span class="hljs-bullet">- </span>- -----------</code></pre><ul><li>效果：</li></ul><blockquote></blockquote><hr><hr><hr><hr><hr><h3 id="脚注文本"><a href="#脚注文本" class="headerlink" title="脚注文本"></a>脚注文本</h3><ul><li><p>脚注是对文本的补充说明，当鼠标悬停时，会显示详细说明</p><pre><code class="hljs markdown">Markdown[^1][<span class="hljs-symbol">^1</span>]: <span class="hljs-link">脚注是对文本的补充说明，当鼠标悬停时，会显示详细说明!!!</span></code></pre></li><li><p>效果:</p><p>Markdown<a href="脚注是对文本的补充说明，当鼠标悬停时，会显示详细说明!!!">^1</a></p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Markdown</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Markdown</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Ubuntu 16.04配置jdk环境变量</title>
+    <link href="/2020/04/27/%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5%E5%88%B0VMware%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <url>/2020/04/27/%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5%E5%88%B0VMware%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA/</url>
+    
+    <content type="html"><![CDATA[<ul><li><strong>SSH简介</strong></li></ul><blockquote><p>SSH 为 <a href="https://baike.baidu.com/item/Secure%20Shell" target="_blank" rel="noopener">Secure Shell</a> 的缩写，由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议。SSH 是较可靠，专为<a href="https://baike.baidu.com/item/%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/1071998" target="_blank" rel="noopener">远程登录</a>会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。SSH最初是UNIX系统上的一个程序，后来又迅速扩展到其他操作平台。SSH在正确使用时可弥补网络中的漏洞。SSH客户端适用于多种平台。几乎所有UNIX平台—包括<a href="https://baike.baidu.com/item/HP-UX" target="_blank" rel="noopener">HP-UX</a>、<a href="https://baike.baidu.com/item/Linux" target="_blank" rel="noopener">Linux</a>、<a href="https://baike.baidu.com/item/AIX" target="_blank" rel="noopener">AIX</a>、<a href="https://baike.baidu.com/item/Solaris/3517" target="_blank" rel="noopener">Solaris</a>、<a href="https://baike.baidu.com/item/Digital" target="_blank" rel="noopener">Digital</a> <a href="https://baike.baidu.com/item/UNIX" target="_blank" rel="noopener">UNIX</a>、<a href="https://baike.baidu.com/item/Irix" target="_blank" rel="noopener">Irix</a>，以及其他平台，都可运行SSH。</p></blockquote><p>SSH有两个不兼容的版本为别为：1.X和2.X。使用SSH 2.X的版本无法连接到SSH 1.X的服务器上。</p><hr><p>SSH1又分为1.3和 1.5两个版本：<br>SSH1采用DES、3DES、Blowfish和RC4等对称加密算法保护数据安全传输，而对称加密算法的密钥是通过非对称加密算法（RSA）来完成交换的。SSH1使用循环冗余校验码（CRC）来保证数据的完整性，但是后来发现这种方法有缺陷。<br>SSH2避免了RSA的专利问题，并修补了CRC的缺陷。SSH2用数字签名算法（DSA）和Diffie-Hellman（DH）算法代替RSA来完成对称密钥的交换，用消息证实代码（HMAC）来代替CRC。同时SSH2增加了AES和Twofish等对称加密算法。</p><ul><li><p><strong>设置虚拟机支持远程连接</strong></p></li><li><p>linux端安装并开启SSH</p></li></ul><pre><code class="hljs gams"><span class="hljs-symbol">$</span> sudo apt-get update <span class="hljs-comment">//更新软件源</span><span class="hljs-symbol">$</span> sudo apt-get install openssh-client <span class="hljs-comment">//安装openssh-client</span><span class="hljs-symbol">$</span> sudo apt-get install openssh-service <span class="hljs-comment">//安装openssh-service</span><span class="hljs-symbol">$</span> sudo service ssh start <span class="hljs-comment">//启动ssh服务</span></code></pre><ul><li><p>查看SSH进程是否启动，如下则启动成功<br><img src="https://upload-images.jianshu.io/upload_images/2670366-a47cd310993815fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p></li><li><p>查看Linux IP地址<br><img src="https://upload-images.jianshu.io/upload_images/2670366-bad3b1884df47bd1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p></li><li><p>使用连接功能连接，这里使用 SecureCRT(XShell等都可以)，注意SSH版本，端口一般默认22<br><img src="https://upload-images.jianshu.io/upload_images/2670366-87feb8cb80c587b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p></li></ul><p>如连接不上，可使用ping测试网络是否连通</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Ubuntu 16.04配置jdk环境变量</title>
+    <link href="/2020/04/27/Ubuntu%2016.04%E9%85%8D%E7%BD%AEjdk%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
+    <url>/2020/04/27/Ubuntu%2016.04%E9%85%8D%E7%BD%AEjdk%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</url>
+    
+    <content type="html"><![CDATA[<h4 id="一、下载JDK"><a href="#一、下载JDK" class="headerlink" title="一、下载JDK"></a>一、下载JDK</h4><ul><li><p>官方链接(提供各个版本下载)<br><a href="http://www.oracle.com/technetwork/java/archive-139210.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/archive-139210.html</a></p></li><li><p>百度云盘链接(仅JDK1.6)<br>链接：<a href="https://pan.baidu.com/s/1wJxKfbTsQXtQ6KnenAt23g" target="_blank" rel="noopener">https://pan.baidu.com/s/1wJxKfbTsQXtQ6KnenAt23g</a><br>密码：7ayn</p><h4 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h4><blockquote><p>执行.bin文件与解压一致，最终都会得到jdk安装目录</p></blockquote></li><li><p>压缩包可直接解压<br>sudo tar -C /usr/lib/*.gz</p></li><li><p>.bin文件<br>sudo chmod u+x *.bin<br>sudo *.bin</p><h4 id="三、配置环境变量"><a href="#三、配置环境变量" class="headerlink" title="三、配置环境变量"></a>三、配置环境变量</h4><blockquote><p>用户目录下的.bashrc文件为仅配置当前用户环境，即只有当前用户可用。<br>/etc/profile 目录是配置所有用户环境</p></blockquote></li><li><p>这里我们配置所有用户环境<br>sudo vi /etc/profile</p><pre><code class="hljs routeros"><span class="hljs-comment">#set oracle jdk environment</span><span class="hljs-comment">#JAVA_HOME 路径需要根据实际路径填写</span><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">JAVA_HOME</span>=/usr/share/jdk1.6.0_45<span class="hljs-builtin-name">export</span> <span class="hljs-attribute">JRE_HOME</span>=<span class="hljs-variable">$&#123;JAVA_HOME&#125;</span>/jre<span class="hljs-builtin-name">export</span> <span class="hljs-attribute">CLASSPATH</span>=.:$&#123;JAVA_HOME&#125;/lib:<span class="hljs-variable">$&#123;JRE_HOME&#125;</span>/lib<span class="hljs-builtin-name">export</span> <span class="hljs-attribute">PATH</span>=<span class="hljs-variable">$&#123;JAVA_HOME&#125;</span>/bin:$PATH</code></pre></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>设计模式</title>
+    <link href="/2018/12/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%BC%80%E7%AF%87/"/>
+    <url>/2018/12/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%BC%80%E7%AF%87/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>设计模式对于很多人来说都听过 <a href="https://www.kancloud.cn/sstd521/design/193491" target="_blank" rel="noopener">https://www.kancloud.cn/sstd521/design/193491</a></p></blockquote><h2 id="设计模式6大原则"><a href="#设计模式6大原则" class="headerlink" title="$ 设计模式6大原则"></a>$ 设计模式6大原则</h2><ul><li><p><strong>单一职责原则（Single Responsibility Principle，简称SRP）</strong></p><ul><li>所谓的职责是指类变化的原因，一个类的职责应该是单一的，且这个单一的职责应该只由这一个类完全封装起来。<br>如其负责存储用户的数据，那么其不应该去处理与用户相关的业务逻辑，应该有一个新的类去处理与用户相关的业务逻辑。<br>图1-1中所示：在接口设计中，既处理了用户的属性，同时处理了用户的行为，那么此设计就不符合单一职责原则。<br><img src="http://upload-images.jianshu.io/upload_images/2670366-02a48dde6658adb6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt="图1-1"><br>我们来看看改进版(图1-2)：<br><img src="http://upload-images.jianshu.io/upload_images/2670366-0bec2de5448e3cb3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt="图1-2"><br>改进之后将用户的属性与用户的行为进行了拆分，这样做有什么好处呢?<br>1、类的复杂度降低，可读性提高， 可维护性提高。<br>2、变更引起的风险降低。<br>单一职责中的接口是暴漏给外部使用的，假设上述例子中数据格式发生变化，如一个用户存在多个昵称，那么此时应该只是用户的属性接口发生变化，而用户的行为接口则不需要变化。反之用户行为变化时，如果用户属性未发生变化，则只修改用户行为接口即可。</li></ul></li><li><p><strong>里氏替换原则（Liskov Substitution Principle,简称LSP）</strong></p></li><li><p><strong>依赖倒置原则（Dependence Inversion Principle,简称DIP）</strong></p></li><li><p><strong>接口隔离原则（Interface Segregation Principle,简称ISP）</strong></p></li><li><p><strong>迪米特法则（Law of Demeter,简称LoD）</strong></p></li><li><p><strong>开放封闭原则（Open Close Principle,简称OCP）</strong></p></li></ul><h2 id="设计模式总纲"><a href="#设计模式总纲" class="headerlink" title="$ 设计模式总纲"></a>$ 设计模式总纲</h2><h2 id="设计模式详解"><a href="#设计模式详解" class="headerlink" title="$ 设计模式详解"></a>$ 设计模式详解</h2><h4 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h4><ul><li><p>简单工厂模式(Simple Factory Pattern)</p></li><li><p>工厂方法模式(Factory Method Pattern)</p></li><li><p>抽象工厂模式(Abstract Factoty)</p></li><li><p>建造者模式</p></li><li><p>单例模式</p></li></ul><h4 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h4><ul><li><p>适配器模式</p></li><li><p>桥接模式</p></li><li><p>装饰模式</p></li><li><p>外观模式</p></li><li><p>享元模式</p></li><li><p>代理模式</p></li></ul><h4 id="行为型模式"><a href="#行为型模式" class="headerlink" title="行为型模式"></a>行为型模式</h4><ul><li><p>命令模式</p></li><li><p>中介者模式</p></li><li><p>观察者模式</p></li><li><p>状态模式</p></li><li><p>策略模式</p></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>设计模式</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
