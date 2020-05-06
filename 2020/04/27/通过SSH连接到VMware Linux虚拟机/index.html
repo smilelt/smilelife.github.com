@@ -173,20 +173,14 @@
           <div class="post-content mx-auto" id="post">
             
             <article class="markdown-body">
-              <ul>
-<li><strong>SSH简介</strong></li>
-</ul>
-<blockquote>
+              <h1 id="SSH简介"><a href="#SSH简介" class="headerlink" title="SSH简介"></a>SSH简介</h1><blockquote>
 <p>SSH 为 <a href="https://baike.baidu.com/item/Secure%20Shell" target="_blank" rel="noopener">Secure Shell</a> 的缩写，由 IETF 的网络小组（Network Working Group）所制定；SSH 为建立在应用层基础上的安全协议。SSH 是较可靠，专为<a href="https://baike.baidu.com/item/%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/1071998" target="_blank" rel="noopener">远程登录</a>会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。SSH最初是UNIX系统上的一个程序，后来又迅速扩展到其他操作平台。SSH在正确使用时可弥补网络中的漏洞。SSH客户端适用于多种平台。几乎所有UNIX平台—包括<a href="https://baike.baidu.com/item/HP-UX" target="_blank" rel="noopener">HP-UX</a>、<a href="https://baike.baidu.com/item/Linux" target="_blank" rel="noopener">Linux</a>、<a href="https://baike.baidu.com/item/AIX" target="_blank" rel="noopener">AIX</a>、<a href="https://baike.baidu.com/item/Solaris/3517" target="_blank" rel="noopener">Solaris</a>、<a href="https://baike.baidu.com/item/Digital" target="_blank" rel="noopener">Digital</a> <a href="https://baike.baidu.com/item/UNIX" target="_blank" rel="noopener">UNIX</a>、<a href="https://baike.baidu.com/item/Irix" target="_blank" rel="noopener">Irix</a>，以及其他平台，都可运行SSH。</p>
 </blockquote>
 <p>SSH有两个不兼容的版本为别为：1.X和2.X。使用SSH 2.X的版本无法连接到SSH 1.X的服务器上。</p>
 <hr>
 <p>SSH1又分为1.3和 1.5两个版本：<br>SSH1采用DES、3DES、Blowfish和RC4等对称加密算法保护数据安全传输，而对称加密算法的密钥是通过非对称加密算法（RSA）来完成交换的。SSH1使用循环冗余校验码（CRC）来保证数据的完整性，但是后来发现这种方法有缺陷。<br>SSH2避免了RSA的专利问题，并修补了CRC的缺陷。SSH2用数字签名算法（DSA）和Diffie-Hellman（DH）算法代替RSA来完成对称密钥的交换，用消息证实代码（HMAC）来代替CRC。同时SSH2增加了AES和Twofish等对称加密算法。</p>
-<ul>
-<li><p><strong>设置虚拟机支持远程连接</strong></p>
-</li>
-<li><p>linux端安装并开启SSH</p>
-</li>
+<h1 id="设置虚拟机支持远程连接"><a href="#设置虚拟机支持远程连接" class="headerlink" title="设置虚拟机支持远程连接"></a>设置虚拟机支持远程连接</h1><ul>
+<li><h2 id="linux端安装并开启SSH"><a href="#linux端安装并开启SSH" class="headerlink" title="linux端安装并开启SSH"></a>linux端安装并开启SSH</h2></li>
 </ul>
 <pre><code class="hljs gams"><span class="hljs-symbol">$</span> sudo apt-get update <span class="hljs-comment">//更新软件源</span>
 <span class="hljs-symbol">$</span> sudo apt-get install openssh-client <span class="hljs-comment">//安装openssh-client</span>
@@ -194,12 +188,15 @@
 <span class="hljs-symbol">$</span> sudo service ssh start <span class="hljs-comment">//启动ssh服务</span></code></pre>
 
 <ul>
-<li><p>查看SSH进程是否启动，如下则启动成功<br><img src="https://upload-images.jianshu.io/upload_images/2670366-a47cd310993815fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p>
-</li>
-<li><p>查看Linux IP地址<br><img src="https://upload-images.jianshu.io/upload_images/2670366-bad3b1884df47bd1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p>
-</li>
-<li><p>使用连接功能连接，这里使用 SecureCRT(XShell等都可以)，注意SSH版本，端口一般默认22<br><img src="https://upload-images.jianshu.io/upload_images/2670366-87feb8cb80c587b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p>
-</li>
+<li><h2 id="查看SSH进程是否启动，如下则启动成功"><a href="#查看SSH进程是否启动，如下则启动成功" class="headerlink" title="查看SSH进程是否启动，如下则启动成功"></a>查看SSH进程是否启动，如下则启动成功</h2></li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/2670366-a47cd310993815fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p>
+<ul>
+<li><h2 id="查看Linux-IP地址"><a href="#查看Linux-IP地址" class="headerlink" title="查看Linux IP地址"></a>查看Linux IP地址</h2></li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/2670366-bad3b1884df47bd1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></p>
+<ul>
+<li><h2 id="使用连接工具连接，这里使用-SecureCRT-XShell等都可以-，注意SSH版本，端口一般默认22"><a href="#使用连接工具连接，这里使用-SecureCRT-XShell等都可以-，注意SSH版本，端口一般默认22" class="headerlink" title="使用连接工具连接，这里使用 SecureCRT(XShell等都可以)，注意SSH版本，端口一般默认22"></a>使用连接工具连接，这里使用 SecureCRT(XShell等都可以)，注意SSH版本，端口一般默认22</h2><img src="https://upload-images.jianshu.io/upload_images/2670366-87feb8cb80c587b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" alt=""></li>
 </ul>
 <p>如连接不上，可使用ping测试网络是否连通</p>
 
